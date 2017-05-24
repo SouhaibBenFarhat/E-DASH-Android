@@ -6,6 +6,9 @@ E-Dash : E-Dash is the name of our project that I, and three of my colleagues, r
 
 - Mobile part : Realize with Android to offer a mobile application, which not only made it possible to offer an "E-Liquid" recipe sharing space and browse all the information about the "E-Juice" for the users, but also it provided a connection To the E-Dash device, which we designed and manufactured, to create the desired "E- Liquid".
 
+### Promotional video
+
+https://www.youtube.com/watch?v=AM-xXn46ub0&t=3s
 
 ### Screenshots
 
