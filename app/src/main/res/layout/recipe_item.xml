@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginTop="22dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/recipe_name_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="ALFA ROMEO MITO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/recipe_date_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:maxLines="1"
+                    android:padding="2dp"
+                    android:text="ALFA ROMEO MITO"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="10sp"
+                    android:textStyle="normal" />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Aromas"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/aroma_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Category"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/category_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Base"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@drawable/base_tag">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/base_image"
+                        android:layout_width="30dp"
+                        android:layout_height="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/americanclassic" />
+
+                    <TextView
+                        android:id="@+id/base_name_item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="7dp"
+                        android:maxLines="1"
+                        android:padding="2dp"
+                        android:text="Category"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="10sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="5dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Combination"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:id="@+id/progress_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/base_tag"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/round_progress"
+                    android:backgroundTint="@color/aromaColor2"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/round_progress"
+                    android:backgroundTint="@color/aromaColor3"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/round_progress"
+                    android:backgroundTint="@color/aromaColor4"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/round_progress"
+                    android:backgroundTint="@color/aromaColor5"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <LinearLayout
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="8dp"
+                    android:background="@drawable/round_progress"
+                    android:backgroundTint="@color/aromaColor1"
+                    android:orientation="horizontal"></LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/recipe_user_image"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_user" />
+
+            <TextView
+                android:id="@+id/user_recipe_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="User"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/ic_comment" />
+
+            <TextView
+                android:id="@+id/comments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="7dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#D0D0D0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@color/colorLightGray" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <ImageView
+            android:id="@+id/recipe_image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="15dp"
+            android:src="@drawable/sex_beach"
+            android:visibility="visible" />
+    </RelativeLayout>
+</RelativeLayout>

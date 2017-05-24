@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_make_recipe_aroma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/tag">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_make_recipe_image"
+                android:layout_width="30dp"
+                android:layout_height="20dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/americanclassic" />
+
+            <TextView
+                android:layout_marginRight="5dp"
+                android:id="@+id/tv_make_recipe_aroma_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Category"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="10sp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

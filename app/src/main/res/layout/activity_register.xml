@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mobile.esprit.sensor.RegisterActivity">
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="40dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_login_logo"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/logo" />
+
+                <EditText
+                    android:id="@+id/reg_name"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_text"
+                    android:fontFamily="Roboto"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/reg_email"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_text"
+                    android:fontFamily="Roboto"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/reg_password"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_text"
+                    android:fontFamily="Roboto"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/reg_con_password"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/login_edit_text"
+                    android:fontFamily="Roboto"
+                    android:hint="Confirm Password"
+                    android:inputType="textPassword"
+                    android:letterSpacing="0.1"
+                    android:paddingLeft="20dp"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/reg_button"
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundbutton"
+                    android:padding="10dp"
+                    android:text="SIGN IN"
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

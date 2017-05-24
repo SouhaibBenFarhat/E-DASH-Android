@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Select aroma"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/defaultBlack"
+            android:textSize="18sp"
+            android:textStyle="bold"/>
+
+
+
+
+        <EditText
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:id="@+id/et_dialog_aroma_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/roundsearch"
+            android:drawableLeft="@mipmap/searchs"
+            android:drawablePadding="16dp"
+            android:hint="Search"
+            android:inputType="text"
+            android:paddingBottom="5dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/defaultBlack"
+            android:textColorHint="@color/colorLightGray"
+            android:textSize="@dimen/medium_text_size" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_dialog_aroma"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.04"
+        android:divider="@color/colorLightGray"
+        android:dividerHeight="2.0sp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+    </ListView>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tv_dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:clickable="true"
+            android:text="CANCEL"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

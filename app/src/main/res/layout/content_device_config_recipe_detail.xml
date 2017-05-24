@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_device_config_recipe_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobile.esprit.sensor.DeviceConfigRecipeDetail"
+    tools:showIn="@layout/activity_device_config_recipe_detail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@android:color/white"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorLightGray"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="2">
+
+                        <TextView
+                            android:id="@+id/recipe_volume"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="5dp"
+                            android:layout_marginRight="1dp"
+                            android:maxLines="1"
+                            android:rotation="270"
+                            android:text="Taux"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                            android:textColor="#5a5a5a"
+                            android:textSize="12sp"
+                            android:textStyle="normal" />
+
+                        <ImageView
+
+                            android:id="@+id/base_mobile_image"
+                            android:layout_width="110dp"
+                            android:layout_height="170dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/base_test" />
+
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <de.hdodenhof.circleimageview.CircleImageView
+                                android:id="@+id/user_recipe_image"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginTop="20dp"
+                                android:src="@drawable/ic_user" />
+
+                            <TextView
+                                android:id="@+id/user_recipe_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="25dp"
+                                android:maxLines="1"
+                                android:padding="2dp"
+                                android:text="User"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textColor="#2b748e"
+                                android:textSize="@dimen/small_text_size"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="15dp"
+                            android:orientation="horizontal"
+                            android:weightSum="2">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="30dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Base Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Total Base"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="PG/VG"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="2"
+                                    android:padding="2dp"
+                                    android:text="Aromas Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="2"
+                                    android:padding="2dp"
+                                    android:text="Total Aromas"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Nicotine"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Steep (Day)"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#5a5a5a"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="normal" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="10dp"
+                                android:layout_weight="1"
+                                android:gravity="right"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/base_pourcentage"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="87%"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/base_totale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/base_pg_vg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/aromas_taux"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/total_aromas"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/base_nicotine"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/recipe_steep"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_margin="2dp"
+                                    android:maxLines="1"
+                                    android:padding="2dp"
+                                    android:text="Taux"
+                                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                    android:textColor="#444"
+                                    android:textSize="@dimen/medium_text_size"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recipe_aromas"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="3dp">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/colorLightGray" />
+
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/colorLightGray"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:weightSum="2">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_recipe_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2">
+
+                </android.support.v7.widget.RecyclerView>
+
+
+            </LinearLayout>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:background="@color/colorLightGray"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="Base"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="18sp">
+
+                </TextView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/nicotine_tag" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nicotine"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nicotine_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="3mg"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D0D0D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/pg_tag" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Propylene Glycol(PG)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/pg_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D0D0D0" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/vd_tag" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Glycerine (VG)"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vg_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D0D0D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+
+                    android:layout_width="20dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/base" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Taux"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/total_base_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="20"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                        android:textColor="#444"
+                        android:textSize="14sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#D0D0D0" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+
+                    android:id="@+id/recipe_image"
+                    android:layout_width="70dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/base_test" />
+
+                <TextView
+                    android:id="@+id/recipe_description"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="8"
+                    android:text="Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent ."
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aromas"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="18sp">
+
+                </TextView>
+            </FrameLayout>
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_aromas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#D0D0D0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorLightGray"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Combination"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                    android:textColor="#444"
+                    android:textSize="18sp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/ic_chart" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="500dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/chart"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

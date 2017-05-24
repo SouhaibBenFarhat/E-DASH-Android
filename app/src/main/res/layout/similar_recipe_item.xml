@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="65dp"
+        android:layout_margin="10dp">
+
+        <LinearLayout
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/similar_recipe_round"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/similar_recipe_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/test_recipe" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/similar_recipe_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Sex on the beach"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textColor="@color/defaultBlack"
+            android:textSize="@dimen/small_text_size" />
+
+    </RelativeLayout>
+</LinearLayout>

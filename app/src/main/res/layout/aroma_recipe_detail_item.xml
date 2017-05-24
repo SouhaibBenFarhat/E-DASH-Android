@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:weightSum="14">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/aroma_image"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerInParent="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/americanclassic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/aroma_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="Strawberry (Ripe)"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="@dimen/medium_text_size"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/manufacturer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:text="The Flavor Apprentice"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/aroma_pourcentage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:text="2.1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#ab2e2e"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <TextView
+                android:id="@+id/aroma_quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="3dp"
+                android:maxLines="1"
+                android:padding="1dp"
+                android:text="2.1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textColor="#444"
+                android:textSize="@dimen/small_text_size"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#D0D0D0" />
+</LinearLayout>

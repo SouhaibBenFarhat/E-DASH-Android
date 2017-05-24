@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#186885</color>
+    <color name="colorPrimaryDark">#155972</color>
+    <color name="colorAccent">#018877</color>
+    <color name="colorBackground">#a04cff</color>
+    <color name="colorText">#FFFFFF</color>
+    <color name="colorPrimaryLight">#a04cff</color>
+    <color name="colorTextHint">#51d8c7</color>
+    <color name="colorGray">#a04cff</color>
+    <color name="colorLightGray">#EEEEEE</color>
+    <color name="colorDarkBlue">#018877</color>
+    <color name="lightGray">#cdcdcd</color>
+    <color name="tag">#e8f1f6</color>
+    <color name="RecipeDetailTag">#ffffff</color>
+    <color name="defaultBlack">#444</color>
+    <color name="baseTag">#efe5d8</color>
+    <color name="colorDialog">#009621</color>
+    <color name="colorBlack">#000000</color>
+<color name="nicotineColor">#e5b717</color>
+    <color name="baseColor">#e5c7b7</color>
+    <color name="aromaColor1">#efe5d8</color>
+    <color name="aromaColor2">#f4efe5</color>
+    <color name="aromaColor3">#e5e1dc</color>
+    <color name="aromaColor4">#dfe8e5</color>
+    <color name="aromaColor5">#fcf9fa</color>
+    <color name="pgColor">#e7d38c</color>
+    <color name="vgColor">#64d286</color>
+    <color name="primaryLight">#4090AD</color>
+    <color name="transparent">#00000000</color>
+    <color name="gray">#B9B9B9</color>
+
+
+</resources>

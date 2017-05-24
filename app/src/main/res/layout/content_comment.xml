@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_comment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.mobile.esprit.sensor.comment_activity.CommentActivity"
+    tools:showIn="@layout/activity_comment">
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_above="@+id/form_container"
+        android:id="@+id/comments_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <LinearLayout
+
+        android:id="@+id/form_container"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="5">
+
+        <EditText
+            android:id="@+id/comment_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="4"
+            android:background="@drawable/round_edit_text"
+            android:drawableLeft="@drawable/ic_comment"
+            android:drawablePadding="10dp"
+            android:fontFamily="Roboto"
+            android:hint="Send"
+            android:letterSpacing="0.1"
+            android:paddingLeft="10dp"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="12dp"
+            android:layout_weight="1">
+
+            <ImageButton
+                android:id="@+id/send_comment_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="#fafafa"
+                android:src="@drawable/ic_send" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

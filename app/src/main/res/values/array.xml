@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="position">
+        <item name="P1">P1</item>
+        <item name="P2">P2</item>
+        <item name="P3">P3</item>
+        <item name="P4">P4</item>
+        <item name="P5">P5</item>
+    </array>
+
+    <array name="colors">
+        <item name="baseColor">#e5c7b7</item>
+        <item name="pgColor">#e7d38c</item>
+        <item name="vgColor">#64d286</item>
+        <item name="primaryLight">#4090AD</item>
+
+    </array>
+
+</resources>

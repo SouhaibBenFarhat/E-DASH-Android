@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shadow_allinone"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/tv_dialog_device_conf_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/medium_text_size"
+            android:textStyle="bold"
+            android:textColor="@color/defaultBlack"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/tv_dialog_device_conf_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textSize="@dimen/small_text_size"
+            android:textColor="@color/lightGray"
+            android:text="sdqsdsdsdsdsd"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_dialog_device_conf_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/small_text_size"
+        android:textColor="@color/defaultBlack"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"/>
+
+
+
+</LinearLayout>

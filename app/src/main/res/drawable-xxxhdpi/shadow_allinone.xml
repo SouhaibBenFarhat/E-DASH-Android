@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!--shadow to bottom and right-->
+    <!--by pushing offset from top and left-->
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"
+        android:bottom="0dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="#D0D0D0" />
+        </shape>
+    </item>
+    <!--foreground-color to cover over non-shadow-->
+    <!--need to also offset in opposite direction-->
+    <item
+        android:left="0dp"
+        android:right="0dp"
+        android:top="0dp"
+        android:bottom="1dp">
+        <shape
+            android:shape="rectangle">
+            <solid android:color="@android:color/white"/>
+        </shape>
+    </item>
+</layer-list>
